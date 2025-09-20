@@ -1,4 +1,4 @@
-# Projeto: Engenharia de Software e IA
+# 🧠 Projeto: Engenharia de Software e IA
 
 Este projeto foi desenvolvido em **Python** e faz uso do **Ollama** (um servidor local de modelos de linguagem) para realizar interações como **chat** e **geração de texto**.
 
@@ -14,74 +14,71 @@ Este projeto foi desenvolvido em **Python** e faz uso do **Ollama** (um servidor
 
 ---
 
-## 🚀 Como rodar o projeto (passo a passo)
+## 🚀 Como rodar o projeto
 
-Para executar o projeto, siga estes passos para configurar o ambiente e as dependências necessárias.
+Siga os passos abaixo para configurar o ambiente e executar a aplicação.
 
-### 1. Clonar o repositório
-
-Abra seu terminal e clone este projeto para sua máquina:
+### 1️⃣ Clonar o repositório
 
 ```bash
-git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
-2. Instalar o Ollama
-O Ollama é o motor de IA que executa os modelos de linguagem localmente. Baixe e instale a versão compatível com seu sistema operacional no site oficial.
+2️⃣ Instalar o Ollama
+O Ollama é o motor de IA que executa os modelos de linguagem localmente.
 
-Windows ou macOS: Acesse o site oficial do Ollama para baixar o instalador: https://ollama.com/download
+Windows ou macOS:
+Baixe e instale a versão compatível no site oficial: Ollama Download
 
-Linux: Use o terminal para instalar o Ollama com o seguinte comando:
+Linux:
+Execute no terminal:
 
-Bash
+bash
+Copiar código
+curl -fsSL https://ollama.com/install.sh | sh
+3️⃣ Baixar o modelo Llama 3
+Após instalar o Ollama, baixe o modelo necessário:
 
-curl -fsSL [https://ollama.com/install.sh](https://ollama.com/install.sh) | sh
-3. Baixar o modelo Llama 3
-Depois de instalar o Ollama, você precisa baixar o modelo de linguagem que o projeto utiliza. Abra um novo terminal e execute o comando abaixo. Este processo pode levar alguns minutos.
-
-Bash
-
+bash
+Copiar código
 ollama run llama3
-4. Criar e ativar o ambiente virtual
-Para evitar conflitos entre as dependências, é uma boa prática usar um ambiente virtual para o projeto.
+(Esse processo pode levar alguns minutos.)
 
-Criar o ambiente virtual:
+4️⃣ Criar e ativar o ambiente virtual
+Crie o ambiente virtual:
 
-Bash
-
+bash
+Copiar código
 python -m venv .venv
-Ativar o ambiente virtual:
+Ative o ambiente virtual:
 
 Windows (PowerShell):
 
-Bash
-
+bash
+Copiar código
 .venv\Scripts\Activate
 Linux ou macOS:
 
-Bash
-
+bash
+Copiar código
 source .venv/bin/activate
-5. Instalar as dependências do Python
-Com o ambiente virtual ativado, instale as bibliotecas necessárias para o projeto.
+5️⃣ Instalar as dependências
+Com o ambiente virtual ativado, instale os pacotes necessários:
 
-Bash
-
+bash
+Copiar código
 pip install -r requirements.txt
-6. Executar a aplicação
-Para rodar o projeto, você precisa iniciar o servidor do Ollama em uma porta disponível e, em seguida, executar o script principal.
+6️⃣ Executar a aplicação
+Abra um terminal e inicie o servidor do Ollama (mantenha-o aberto):
 
-Abra um terminal e inicie o servidor do Ollama. Mantenha este terminal aberto durante a execução.
-
-Bash
-
+bash
+Copiar código
 ollama serve
-Abra um segundo terminal, ative o ambiente virtual novamente e execute o script Python do projeto.
+Em um segundo terminal, ative o ambiente virtual e rode o script principal:
 
-Bash
-
-# Ative o ambiente (exemplo para Windows)
+bash
+Copiar código
+# Ativar ambiente virtual (exemplo para Windows)
 .venv\Scripts\Activate
 
-# Execute o script
+# Executar o projeto
 python main.py
-O resultado da execução, com as interações de chat e geração de texto, será exibido diretamente no seu terminal.
