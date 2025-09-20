@@ -21,8 +21,8 @@ Siga os passos abaixo para configurar o ambiente e executar a aplicação.
 ### 1️⃣ Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/fernandes-pedro/eng.software_ia.git
+cd eng.software_ia
 ```
 
 ### 2️⃣ Instalar o Ollama
